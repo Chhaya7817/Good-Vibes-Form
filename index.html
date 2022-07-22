@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collect User Data</title>
+
+    <style>
+      body {
+        height: 100vh;
+        background-color: rgb(19, 186, 242);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        width: 600px;
+        min-height: 400px;
+        background-color: rgba(228, 225, 225, 0.872);
+        border-radius: 10px;
+        margin: 10px auto;
+        padding:50px;
+        
+      }
+      .disc{
+        font-size:20px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      h2 {
+        text-align: center;
+        font-size:48px;
+      }
+      label {
+        margin-left: 30px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        
+      }
+      input[type="text"] {
+        width: 300px;
+        height: 30px;
+        border: 0px;
+        outline: 0px;
+        margin-bottom: 20px;
+        
+      }
+      input[type="submit"]{
+        margin: 20px 20px;
+        width: 150px;
+        height: 40px;
+        background: rgb(54, 137, 200);
+        color: white;
+      
+      }
+      #btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #exp input[type="text"]{
+        
+        height: 50px;
+        width: 200px;
+        
+      }
+      .period{
+        margin-top: -15px;
+        margin-left: 320px;
+        display: flex;
+        flex-direction: column;
+      }
+      .emo{
+        margin-top: -15px;
+        margin-left: 320px;
+        display: flex;
+        flex-direction: column;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h2>Good Vives Form</h2>
+    <div class="container">
+      
+      <form action="./Account.html" method="get">
+        <!-- Form Elements: Collect the data -->
+        <div class="disc">Tell us something positive that happended to you today.</div>
+        <div>
+          <label for="" class="labelS">Enter Name: </label>
+          <input type="text" placeholder="Enter your Name" name="name" />
+        </div>
+
+        <div>
+          <label for="" class="labelS">Enter Email </label>
+          <input type="text" placeholder="Enter your Email" name="email" />
+        </div>
+
+        <div>
+          <label for="" class="labelS">On scale of 1-10, How was it </label>
+          <input
+            type=""
+            placeholder="Enter a number between 1 and 10"
+            name="num"
+            required
+          />
+        </div>
+        <br>
+        <div>
+            <label for="" class="labelS">Where did it happen?</label>
+            <select name="" id="place">
+              <option value="at home">at home</option>
+              <option value="at school">at school</option>
+              <option value="at market">at market</option>
+            </select>
+          </div>
+          <br>
+        <div>
+          <label for="" class="labelS">At what time of day it happened? </label>
+          <div class="period">
+         <div> <input type="radio" name="period" value="Morning"  class="radio" /> Morning</div>
+         <div><input type="radio" name="period" value="Afternoon"class="radio" /> Afternoon</div>
+          <div><input type="radio" name="period" value="Evening"  class="radio" />Evening</div>
+        </div>
+        </div>
+        <br />
+        <div>
+          <label for="" class="labelS">What emotions did you experienced?</label>
+          <div class="emo">
+          <div><input type="checkbox" name="emotions" value="Excited" /> Excited  </div>
+          <div><input type="checkbox" name="emotions" value="Humbled" /> Humbled  </div>    
+          <div><input type="checkbox" name="emotions" value="Elated" /> Elated    </div>
+          <div><input type="checkbox" name="emotions" value="loved" /> loved     </div>
+          <div><input type="checkbox" name="emotions" value="Enthusiastic" />Enthusiastic</div>
+        </div>
+        </div>
+        <br />
+        
+        <br />
+        <div id="exp">
+          <label for="" class="labelS">Please describe your positive experience.</label>
+          <input type="text" name="experience" required />
+        </div>
+        <br />
+        <br />
+        <div id="btn">
+          <input type="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
